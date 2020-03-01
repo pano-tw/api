@@ -7,6 +7,6 @@ COPY . .
 EXPOSE 3000
 
 RUN npm install --global pnpm && \
-  pnpm install
+  pnpm install --prod
 
 ENTRYPOINT [ "pnpm", "start" ]
