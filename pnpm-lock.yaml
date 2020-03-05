@@ -1,4 +1,5 @@
 dependencies:
+  '@koa/cors': 3.0.0
   axios: 0.19.2
   cheerio: 1.0.0-rc.3
   koa: 2.11.0
@@ -24,6 +25,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-PX4y5xQUvy0fnEVHrYOarRPXVWafSjTW9T0Hab8gVIawpl2Sj0ORyrygANq+KjcNlSSTw0YCLSNA8OyZ1I4yEg==
+  /@koa/cors/3.0.0:
+    dependencies:
+      vary: 1.1.2
+    dev: false
+    engines:
+      node: '>= 8.0.0'
+    resolution:
+      integrity: sha512-hDp+cXj6vTYSwHRJfiSpnf5dTMv3FmqNKh1or9BPJk4SHOviHnK9GoL9dT0ypt/E+hlkRkZ9edHylcosW3Ghrw==
   /@types/node/13.7.4:
     dev: false
     resolution:
@@ -1748,6 +1757,7 @@ packages:
     resolution:
       integrity: sha512-faQrqNMzcPCHGVC2aaOINk13K+aaBDUPjGWl0teOXywElLjyVAB6Oe2jj62jHYtwsU49jXhScYbvPENK+6zAvQ==
 specifiers:
+  '@koa/cors': ^3.0.0
   axios: ^0.19.2
   cheerio: ^1.0.0-rc.3
   eslint: ^6.8.0

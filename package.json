@@ -3,6 +3,7 @@
 		"start": "node index.js"
 	},
 	"dependencies": {
+		"@koa/cors": "^3.0.0",
 		"axios": "^0.19.2",
 		"cheerio": "^1.0.0-rc.3",
 		"koa": "^2.11.0",
