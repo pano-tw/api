@@ -9,7 +9,7 @@ const app = new Koa();
 app
   .use(cors({ origin: 'https://pano.tw' }))
   .use(_.get('/:id', async (ctx, id) => {
-    const response = await axios.get(`https://imgur.com/gallery/${id}`);
+    const response = await axios.get(`https://imgur.com/a/${id}`);
     const $ = cheerio.load(response.data);
 
     ctx.body = {
